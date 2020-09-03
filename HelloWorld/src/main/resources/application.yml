@@ -1,0 +1,15 @@
+# person:
+#   name: hjh
+#   age: 20
+#   boss: false
+#   maps:
+#     k1: v1
+#     k2: v2
+#   lists:
+#     - list1
+#     - list2
+#   dog:
+#     name: 小卡
+#     age: 2
+
+# # 冒号后必有空格
