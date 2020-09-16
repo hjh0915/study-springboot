@@ -1,3 +1,20 @@
+# 通过---切换不同文档（文档块）
+server:
+  port: 8081
+spring:
+  profiles:
+    active: dev
+---
+server:
+  port: 8082
+spring:
+  profiles: dev
+---
+server:
+  port: 8083
+spring:
+  profiles: prod
+
 # person:
 #   name: hjh
 #   age: 20

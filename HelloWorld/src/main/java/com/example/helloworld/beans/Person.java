@@ -3,6 +3,9 @@ package com.example.helloworld.beans;
 import java.util.List;
 import java.util.Map;
 
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
@@ -11,6 +14,7 @@ import org.springframework.stereotype.Component;
 @Component //容器
 @ConfigurationProperties(prefix = "person") //找到文件中的前缀
 public class Person {
+    @Value("${person.user-name}")
     private String username;
     private Integer age;
     private boolean boss;
